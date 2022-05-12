@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="http://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/matrix');
+    </style>
+    <title>Gerador de números</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <header>
+        </header>
+    </a>
+    <main>
+        <section class="lateral_esquerda">
+            <h1>Gerador de números aleatórios</h1>
+            <label for="range">Digite a quantidade de números que deseja gerar:<br> ⚠ Limitado à 5000 (EX: 1000)</label>
+            <input name="range" id="range">
+            <button class=" botao_gerar">Gerar números</button>
+        </section>
+        <section class="lateral_direita">
+            <textarea name="numeros_gerados" id="numeros_gerados" cols="30" rows="10" readonly></textarea>
+            <button class="botao_copiar" onclick="copiar()">Copiar</button>
+            <button class="limpar" onclick="limpar()">Limpar</button>
+
+        </section>
+    </main>
+</body>
+<script src="js/js.js">
+</script>
+
+</html>

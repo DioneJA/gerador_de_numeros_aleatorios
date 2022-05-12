@@ -1,0 +1,160 @@
+body {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.932);
+    font-family: "Courier New", Courier, monospace;
+    color: #03ff0f
+}
+
+header {
+    transition: 0.3s;
+    width: 9%;
+    height: 800px;
+    float: left;
+    background-image: url("../img/matrix.gif");
+    background-size: 100%;
+}
+
+.lateral_esquerda {
+    border: 1px dashed #03ff0f;
+    float: left;
+    margin-top: 4%;
+    margin-left: 7%;
+    padding: 20px;
+    width: 40%;
+    height: 330px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#range {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 30px;
+    border: 2px solid #03ff0f;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: #03ff0f;
+    background-color: black;
+}
+
+.lateral_direita {
+    width: 30%;
+    height: 800px;
+    float: right;
+    margin: 20px;
+}
+
+#numeros_gerados {
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0.6), rgba(0, 0, 0, 0.6)100%), url("../img/matrix.gif");
+    ;
+    font-weight: bold;
+    font-family: 'Matrix', sans-serif;
+    border: 2px solid #03ff0f;
+    border-radius: 10px;
+    color: #03ff0f;
+    font-size: 20px;
+    width: 90%;
+    height: 500px;
+    resize: none;
+    overflow: unset;
+}
+
+#numeros_gerados::-webkit-scrollbar {
+    display: none;
+}
+
+#numeros_gerados::-webkit-input-placeholder {
+    color: #03ff0f;
+    font-size: 20px;
+}
+
+.botao_copiar,
+.botao_gerar,
+.limpar {
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 3%;
+    width: 35%;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #03ff0f;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao_copiar:hover,
+.botao_gerar:hover,
+.limpar:hover {
+    transform: scale(1.1);
+    background-color: #03ff0f;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        overflow: scroll;
+    }
+
+    header {
+        float: none;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 5%;
+        display: block;
+    }
+
+    h1,
+    label {
+        text-align: center;
+        padding: auto;
+    }
+
+    #range {
+        font-size: 20px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 0;
+        height: 40px;
+        width: 100%;
+    }
+
+    .lateral_direita,
+    .lateral_esquerda {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .lateral_esquerda {
+        margin-bottom: 20%;
+        height: 400px;
+    }
+
+    .botao_copiar,
+    .botao_gerar,
+    .limpar {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
